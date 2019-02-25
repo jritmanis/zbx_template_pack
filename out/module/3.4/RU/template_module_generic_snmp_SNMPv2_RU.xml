@@ -429,7 +429,7 @@ networking software.</description>
          <manual_close>0</manual_close>
          <dependencies>
             <dependency>
-               <name>Нет ответа на ICMP ping</name>
+               <name>Нет ответа на ICMP Ping</name>
                <expression>{Template Module Generic SNMPv2:icmpping.max(#3)}=0</expression>
                <recovery_expression/>
             </dependency>

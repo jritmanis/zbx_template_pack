@@ -204,7 +204,7 @@ Last three attempts returned timeout.  Please check device connectivity.</descri
          <manual_close>0</manual_close>
          <dependencies>
             <dependency>
-               <name>Нет ответа на ICMP ping</name>
+               <name>Нет ответа на ICMP Ping</name>
                <expression>{Template Module ICMP Ping:icmpping.max(#3)}=0</expression>
                <recovery_expression/>
             </dependency>
@@ -226,7 +226,7 @@ Last three attempts returned timeout.  Please check device connectivity.</descri
          <manual_close>0</manual_close>
          <dependencies>
             <dependency>
-               <name>Нет ответа на ICMP ping</name>
+               <name>Нет ответа на ICMP Ping</name>
                <expression>{Template Module ICMP Ping:icmpping.max(#3)}=0</expression>
                <recovery_expression/>
             </dependency>
