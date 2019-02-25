@@ -175,8 +175,8 @@
 			{
 				"documentation": "Recovers when below 80% of {$IF_ERRORS_WARN:\"{#IFNAME}\"} (see ZBX-13128)",
 				"id": "if.errors",
-				"expression": "{TEMPLATE_NAME:METRIC.avg(5m)}>{$IF_ERRORS_WARN:\"{#IFNAME}\"}\nor {TEMPLATE_NAME:__net.if.out.errors__.avg(5m)}>{$IF_ERRORS_WARN:\"{#IFNAME}\"}",
-				"recovery_expression": "{TEMPLATE_NAME:METRIC.avg(5m)}<{$IF_ERRORS_WARN:\"{#IFNAME}\"}*0.8\nand {TEMPLATE_NAME:__net.if.out.errors__.avg(5m)}<{$IF_ERRORS_WARN:\"{#IFNAME}\"}*0.8",
+				"expression": "{TEMPLATE_NAME:METRIC.avg(15m)}>{$IF_ERRORS_WARN:\"{#IFNAME}\"}\nor {TEMPLATE_NAME:__net.if.out.errors__.avg(15m)}>{$IF_ERRORS_WARN:\"{#IFNAME}\"}",
+				"recovery_expression": "{TEMPLATE_NAME:METRIC.avg(15m)}<{$IF_ERRORS_WARN:\"{#IFNAME}\"}*0.8\nand {TEMPLATE_NAME:__net.if.out.errors__.avg(15m)}<{$IF_ERRORS_WARN:\"{#IFNAME}\"}*0.8",
 				"manual_close": "YES",
 				"name": "High error rate",
 				"priority": 2,
